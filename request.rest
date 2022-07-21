@@ -1,0 +1,46 @@
+get http://localhost:9000/
+
+###
+
+post http://localhost:9000/register
+Content-Type: application/json
+
+{
+  "email": "kamurohith748@gmail.com",
+  "password": "rohith123"
+}
+
+###
+post http://localhost:9000/login
+Content-Type: application/json
+
+{
+  "email": "rohith@gmail.com",
+  "password": "rohith123"
+}
+
+###
+get http://localhost:9000/todos
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmQ4MzE1NmUzODIzYTZmOTY4Y2JkMzMiLCJpYXQiOjE2NTgzMzYwMzUsImV4cCI6MTY1ODMzNjA0NX0.aWfKareePYwUr0hhPh6hG_lQucA8BYzveLyJZadIJSg"
+}
+
+###
+post http://localhost:9000/addTodo
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmQ4MzE1NmUzODIzYTZmOTY4Y2JkMzMiLCJpYXQiOjE2NTgzMzY2OTcsImV4cCI6MTY1ODM0MDI5N30._V1ffACr14tjGUh4kE-MMp8oMaz0tg4IkLhKrbSE4E8",
+  "todo": "buy mangoes"
+}
+
+###
+
+post http://localhost:9000/buy%20mango
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmQ3ZmZiODExZGE5MjZmOWI5MzU5Y2EiLCJpYXQiOjE2NTgzMjI5OTcsImV4cCI6MTY1ODMyNjU5N30.1ulhTuqupzwSiBbSws0LWq-cRHkvYAVWAFmyH32eVlI"
+}
