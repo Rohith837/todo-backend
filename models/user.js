@@ -6,7 +6,7 @@ let userSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
-	todos: [ { type: String, unique: true } ]
+	todos: [ { type: String } ]
 });
 
 module.exports = mongoose.model('user', userSchema);
